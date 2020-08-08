@@ -1,0 +1,12 @@
+"""
+Desafio 051
+Problema: Desenvolva um programa que leia o primeiro termo
+          e a razão PA(Progressão aritmética). No final,
+          mostre os 10 primeiros termos dessa progressão.
+Resolução do problema:
+"""
+I=int(input('Primeiro termo da PA: '))
+P=int(input('Razão da PA: '))
+decimo=I+9*P
+for c in range(I,decimo+P,P):
+    print(c, end=' ')
