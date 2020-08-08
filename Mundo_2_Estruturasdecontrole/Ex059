@@ -1,0 +1,46 @@
+
+"""
+Desafio 059
+Problema: Crie um programa que leia dois valores
+          e mostre um menu na tela.
+          -------- Menu --------
+          [1] - Somar
+          [2] - Multiplicar
+          [3] - Maior
+          [4] - Novos números
+          [5] - Sair do programa
+          -----------------------
+          Seu programa deverá realizar a operação solicidade em cada caso.
+Resolução do problema:
+"""
+N1=int(input('Digite o primeiro valor: '))
+N2=int(input('Digite o segundo valor: '))
+c=0
+while c!=5:
+    print('-=-'*20)
+    print('''    [1]-Somar
+    [2]-Multiplicar
+    [3]-Maior
+    [4]-Novos números
+    [5]-Sair do programa    ''')
+    c=int(input('Qual sua opção? '))
+    print('-=-' * 20)
+    if c==1:
+        print(N1+N2)
+    if c==2:
+        print(N1*N2)
+    if c==3:
+        if N1>N2:
+            print('{} é maior que {}'.format(N1,N2))
+        elif N2>N1:
+            print('{} é maior que {}.'.format(N2,N1))
+        else:
+            print('Os valores são iguais')
+    if c==4:
+        N1=int(input('Primeiro valor: '))
+        N2=int(input('Segundo valor: '))
+    if c==5:
+        print('Finalizando...')
+
+
+
