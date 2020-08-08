@@ -1,0 +1,11 @@
+
+Problema: Faça um programa que leia algo pelo teclado e mostre na tela
+          seu tipo primitivo e todas as informações possíveis sobre ela.
+
+
+
+v=input("Digite algo: ")
+print("Tipo: ",type(v))
+print("É numérico? ",v.isalnum())
+print("É alfabético? ",v.isalpha())
+print("Só tem espaços? ",v.isspace())
