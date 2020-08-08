@@ -1,0 +1,13 @@
+"""
+Desafio 011
+Problema: Faça um programa que leia a largura e a altura de uma
+          parede em metros, calcule a sua área e a quantidade de
+          tinta necessária para pintá-la, sabendo que cada litro
+          de tinta pinta uma área de 2 metros quadrados.
+Resolução do problema:
+"""
+l=float(input("Largura da parede: "))
+a=float(input("Altura da parede: "))
+area=l*a
+print("Sua parede tem dimensão de {}x{} e sua àrea é {:.2f}metros quadrados".format(l,a,area))
+print("Para pintar essa parede, você precisará de {:.2f} L de tinta".format(area/2))
