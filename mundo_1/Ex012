@@ -1,0 +1,9 @@
+"""
+Desafio 012
+Problema: Faça um algoritmo que leia o preço de um produto e
+          mostre seu novo preço, com 5% de desconto.
+Resolução do problema:
+"""
+p=float(input("Preço do produto: "))
+f=p-(p*5/100)
+print("O produto que custava R${} com desconto de 5% vai custar R${}".format(p,f))
