@@ -1,0 +1,20 @@
+"""
+Desafio 054
+Problema: Crie um programa que leia o ano de nascimento
+          de sete pessoas. No final, mostre quantas pessoas
+          ainda não atingiram a maioridade e quantas já são maiores.
+Resolução do problema:
+"""
+from datetime import date
+ano=date.today().year
+maiores=0
+menores=0
+for c in range(1,8):
+    nasc=int(input(' Date de nascimento da {}º pessoa: '.format(c)))
+    V=ano-nasc
+    if V>=18:
+        maiores=maiores+1
+    else:
+        menores=menores+1
+print('Quantidade de maiores: {}'.format(maiores))
+print('Quantidade de menores: {}'.format(menores))
