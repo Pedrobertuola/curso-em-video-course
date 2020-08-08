@@ -1,0 +1,27 @@
+"""
+Desafio 061
+Problema: Refaça o desafio 051, lendo o primeiro número termo e
+          a razão de uma PA(Progressão Aritmética), mostrando
+          os 10 primeiros termos da progressão usando a estrutura
+          while.
+Resolução do problema:
+"""
+I=int(input('Inicio: '))
+R=int(input('Razão: '))
+T=I+9*R
+while I<=T:
+    print(I)
+    I=I+R
+    
+    #Solução alternativa
+    
+print('Gerador de PA')
+print('-='*20)
+primeiro=int(input('Primeiro termo: '))
+razao=int(input('Razão: '))
+cont=1
+while cont<=10:
+    print('{}-'.format(primeiro),end=' ')
+    primeiro=primeiro+razao
+    cont=cont+1
+print('Fim')
