@@ -1,0 +1,9 @@
+"""
+Desafio 013
+Problema: Faça um algoritmo que leia o salário de um funcionário
+          e mostre seu novo salário, com 15% de aumento.
+Resolução do problema:
+"""
+s=float(input("Salario do funcionario: R$"))
+a=s+(s*15/100)
+print("O salário de R${} com 15% de aumento passa a receber R${}".format(s,a))
