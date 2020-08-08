@@ -1,0 +1,19 @@
+"""
+Desafio 038
+Problema: Escreva um programa que leia dois números inteiros e compare-os.
+          mostrando na tela uma mensagem:
+            - O primeiro valor é maior
+            - O segundo valor é maior
+            - Não existe valor maior, os dois são iguais
+Resolução do problema:
+"""
+n1=int(input("Primeiro valor: "))
+n2=int(input("Segundo valor: "))
+if n1>n2:
+    print('O maior valor é {}'.format(n1))
+
+elif n2>n1:
+    print('O maior valor é {}'.format(n2))
+
+elif n1==n2:
+    print('Os valores são iguais.')
