@@ -1,0 +1,19 @@
+"""
+Desafio 009
+Problema: Faça um programa que leia um número Inteiro qualquer
+          e mostre na tela a sua tabuada.
+Resolução do problema:
+"""
+t=int(input("Tabuada desejada: "))
+print("-"*12)
+print("{:2} x {} = {}".format(1,t,1*t))
+print("{:2} x {} = {}".format(2,t,t*2))
+print("{:2} x {} = {}".format(3,t,t*3))
+print("{:2} x {} = {}".format(4,t,t*4))
+print("{:2} x {} = {}".format(5,t,t*5))
+print("{:2} x {} = {}".format(6,t,t*6))
+print("{:2} x {} = {}".format(7,t,t*7))
+print("{:2} x {} = {}".format(8,t,t*8))
+print("{:2} x {} = {}".format(9,t,t*9))
+print("{:2} x {} = {}".format(10,t,t*10))
+print("-"*12)
