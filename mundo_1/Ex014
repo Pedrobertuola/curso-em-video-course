@@ -1,0 +1,9 @@
+"""
+Desafio 014
+Problema: Escreva um programa que converta uma temperatura
+          digitando em graus Celsius e converta para graus Fahrenheit.
+Resolução do problema:
+"""
+c=float(input("Temperatura em ºC:"))
+f=c*9/5+32
+print("A temperatura de {}ºC corresponde a {}ºF".format(c,f))
