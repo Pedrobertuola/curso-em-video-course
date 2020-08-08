@@ -1,0 +1,23 @@
+"""
+Desafio 058
+Problema: Melhore o jogo do desafio 028 onde o computador vai "pensar" em um
+          número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até
+          acertar, mostrando no final quantos palpites foram necessários para vencer.
+Resolução do problema:
+"""
+from random import randint
+print('Sou seu computador,')
+print('Acabei de pensar em um número entre 0 e 10')
+print('Será que você consegue adivinhar?')
+computador=randint(0,10)
+
+tentativas=0
+jogador=0
+while jogador!=computador:
+    jogador=int(input('Qual é seu palpite: '))
+    tentativas=tentativas+1
+    if jogador>computador:
+        print('Menos...Tente novamente')
+    if jogador<computador:
+        print('Mais...Tente novamente')
+print('Acertou com {} tentativas'.format(tentativas)
