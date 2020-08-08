@@ -1,0 +1,9 @@
+
+"""
+Desafio 008
+Problema: Escreva um programa que leia um valor em metros e o
+          exiba convertido em centímetros e milímetros.
+Resolução do problema:
+"""
+m=float(input("Distância em metros: "))
+print("{} metros equilave a {} cm e {} mm".format(m,m*100,m*1000))
