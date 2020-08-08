@@ -1,0 +1,11 @@
+"""
+Desafio 030
+Problema:  Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
+Resolução do problema:
+"""
+
+N=int(input("Digite um número: "))
+if (N%2==0):
+    print("O número {} é par".format(N))
+else:
+    print("O número {} é impar".format(N))
