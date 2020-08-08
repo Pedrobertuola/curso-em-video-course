@@ -1,0 +1,14 @@
+
+"""
+Desafio 018
+Problema: Faça um programa que leia um ângulo qualquer e mostre na
+          tela o valor do seno, cosseno e tangente desse ângulo.
+Resolução do problema:
+"""
+import math
+a=float(input("Digite o angulo: "))
+rad=(a*3.1415)/180
+print("Seno de {} vale: {:.2f} ".format(a,math.sin(rad)))
+print("Cos de {} vale: {:.2f}".format(a,math.cos(rad)))
+print("Tan de {} vale: {:.2f}".format(a,math.tan(rad)))
+"""math.randians(a)"""
