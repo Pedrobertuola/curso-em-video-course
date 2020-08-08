@@ -1,0 +1,13 @@
+"""
+Desafio 034
+Problema: Escreva um programa que pergunte o salário de um funcionário
+          e calcule o valor do seu aumento. Para salários superiores a
+          R$1250,00, calcule um aumento de 10%. Para os inferiores ou
+          iguais, o aumento é de 15%.
+Resolução do problema:
+"""
+s=float(input("Qual o salário do funcionário? R$"))
+if s>1250:
+    print("Quem ganhava R${} passa a ganhar R${}".format(s,s+(s*10/100)))
+else:
+    print("Quem ganhava R${} passa a ganhar R${}".format(s,s+(s*15/100)))
