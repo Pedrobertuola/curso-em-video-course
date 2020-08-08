@@ -1,0 +1,3 @@
+import playsound
+playsound.playsound('nomedorarquivo.mp3')
+playsound.playsound
