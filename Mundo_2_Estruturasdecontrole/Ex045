@@ -1,0 +1,89 @@
+
+"""
+Desafio 045
+Problema: Crie um programa que faça o computador jogar Jokenpô com você.
+Resolução do problema:
+"""
+from time import sleep
+from random import choice
+print('''Suas opções:
+[1]-Pedra
+[2]-Papel
+[3]-Tesoura''')
+J=int(input('Qual é a sua jogada? '))
+print('Jo')
+sleep(1)
+print('Ken')
+sleep(1)
+print('Po!!!')
+a1='Pedra'
+a2='Papel'
+a3='Tesoura'
+N=[a1,a2,a3]
+P=choice(N)
+print('-=-'*20)
+print('Computador jogou {}'.format(P))
+if J==1:
+    print('Jogador selecionou {}'.format('Pedra'))
+elif J==2:
+    print('Jogador selecionou {}'.format('Papel'))
+else:
+    print('Jogador selecionou {}'.format('Tesoura'))
+print('-=-'*20)
+if J==1 and P==a1 or J==2 and P==a2 or J==3 and P==a3:
+    print('Empate')
+elif J==1 and P==a2:
+    print('O computador venceu')
+elif J==1 and P==a3:
+    print('O jogador venceu')
+elif J==2 and P==a1:
+    print('O jogador venceu')
+elif J==2 and P==a3:
+    print('O computador venceu')
+elif J==3 and P==a1:
+    print('O computador venceu')
+elif J==3 and P==a2:
+    print('O jogador venceu')
+    
+    #Outra resolução
+ 
+ 
+from random import randint
+itens=['Pedra', 'Papel','Tesoura']
+computador=randint(0,2)
+print('''Suas opções:
+[1]-Pedra
+[2]-Papel
+[3]-Tesoura''')
+jogador=int(input('Qual é sua jogada? '))
+print('-=-'*20)
+print('O computador jogou {}'.format(itens[computador]))
+print('O jogador jogou {}'.format(itens[jogador]))
+print('-=-'*20)
+if computador ==0: #Computador jogou Pedra
+    if jogador==0:
+        print('Empate')
+    elif jogador==1:
+        print('Jogador vence')
+    elif jogador==2:
+        print('Computador vende')
+    else:
+        print('Jogada inválida')
+elif computador==1: #Computador jogou Papel
+    if jogador==0:
+        print('Computador vence')
+    elif jogador==1:
+        print('Empate')
+    elif jogador==2:
+        print('Jogador vence')
+    else:
+        print('Jogada inválida')
+elif computador==2: #computador jogou tesoura
+    if jogador==0:
+        print('jogador vence')
+    elif jogador==1:
+        print('Computador vence')
+    elif jogador==2:
+        print('Empate')
+    else:
+        print('Jogada inválida')
