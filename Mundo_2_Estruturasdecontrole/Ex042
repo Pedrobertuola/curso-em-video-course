@@ -1,0 +1,29 @@
+
+"""
+Desafio 042
+Problema: Refaça o desafio 035 dos triângulos, acrescentando o
+          recurso de mostrar que tipo de triângulo será formado:
+            - EQUILÁTERO: todos os lados iguais
+            - ISÓSCELES: dois lados iguais, um diferente
+            - ESCALENO: todos os lados diferentes
+Resolução do problema:
+"""
+print('-=-'*20)
+print('Analisador de triângulos')
+print('-=-'*20)
+s1=float(input('Primeiro segmento: '))
+s2=float(input('Segundo segmento: '))
+s3=float(input('Terceiro segmento: '))
+if s1<s2+s3 and s2<s1+s3 and s3<s1+s2:
+    print('Os segmentos acima podem formar um triângulo')
+    if s1 == s2 and s2 == s3:
+        print('O triangulo é equilatero')
+
+    elif s1 == s2 and s2 != s3 or s1 == s3 and s3 != s2:
+        print('O triangulo é isosceles')
+
+    else:
+        print('O triangulo é escaleno')
+
+else:
+    print('Os segmentos acima não podem formar um triangulo')
