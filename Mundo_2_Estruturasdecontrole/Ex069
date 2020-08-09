@@ -1,0 +1,34 @@
+"""
+Desafio 069
+Problema: Crie um programa que leia a idade e o sexo de várias
+          pessoas. A cada pessoa cadastrada, o programa deverá
+          perguntar se o usuário quer ou não continuar.
+          No final, mostre:
+            A) Quantas pessoas tem mais de 18 anos;
+            B) Quantos homens foram cadastrados;
+            C) Quantas mulheres tem menos de 20 anos.
+Resolução do problema:
+"""
+maiores=0
+H=0
+M=0
+while True:
+    print('-=-'*10)
+    print('Cadastre uma pessoaa')
+    print('-=-'*10)
+    I=int(input('Idade: '))
+    if I>18:
+        maiores=maiores+1
+    S=''
+    while S!='M' and S!='F':
+        S=str(input('Sexo [M/F]: ')).upper().strip()[0]
+    if S=='M':
+        H=H+1
+    if S=='F' and I<20:
+        M=M+1
+    R=str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    if R=='N':
+        break
+print(f'Ao todo temos {maiores} pessoas maiores de idade')
+print(f'Ao todo tivemos {H} homens cadastrados')
+print(f'Ao todo tivemos {M} mulheres com menos de 20 anos de idade')
