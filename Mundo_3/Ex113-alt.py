@@ -1,6 +1,27 @@
-import intfloat
+def leiaint(msg):
+    while True:
+        try:
+            n=int(input(msg))
 
+        except:
+            print('Por favor, digite um valor válido')
+        else:
+            print(f'Valor {n} computado com sucesso')
+            break
 
-n1=intfloat.leiaint('Digite um número inteiro: ')
-n2=intfloat.leiafloat('Digite um número real: ')
-print(f'O valor inteiro digitado foi {n1} e o valor real foi {n2} ')
+def leiafloat(msg):
+    while True:
+        try:
+            n=float(input(msg))
+        except(ValueError,TypeError):
+            print('\033[31mPor favor, digite um valor válido\033[m')
+        except(KeyboardInterrupt):
+            print('Entrada de dados interrompida pelo usuario')
+            break
+        else:
+            print(f'Valor {n} computado com sucesso')
+            break
+
+#num=leiaint('Digite um valor:')
+
+leiafloat('Digite um valor: ')
