@@ -31,7 +31,7 @@ while True:
             
             #Outra resolução
             
-  valor=int(input('Valor a ser sacado: '))
+valor=int(input('Valor a ser sacado: '))
 nota50=valor//50
 valor %=50
 nota20=valor//20
