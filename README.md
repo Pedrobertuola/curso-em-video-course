@@ -1,2 +1,2 @@
 # curso-em-video-course
-Just simple programs.
+Exercícios e desafios do curso de python do canal Curso em vídeo
